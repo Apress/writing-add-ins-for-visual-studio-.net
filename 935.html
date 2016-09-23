@@ -1,0 +1,120 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./Errata%20for%20Writing%20Add_files/filelist.xml">
+<title>Errata for Writing Add-ins for Visual Studio </title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Les Smith</o:Author>
+  <o:LastAuthor>Les Smith</o:LastAuthor>
+  <o:Revision>1</o:Revision>
+  <o:TotalTime>1</o:TotalTime>
+  <o:Created>2003-05-20T01:55:00Z</o:Created>
+  <o:LastSaved>2003-05-20T01:56:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Company>HHI Software, Inc.</o:Company>
+  <o:Lines>1</o:Lines>
+  <o:Paragraphs>1</o:Paragraphs>
+  <o:Version>9.2720</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:RelyOnVML/>
+  <o:DoNotRelyOnCSS/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<p class=MsoNormal><font size=3 face="Times New Roman"><span style='font-size:
+12.0pt'>Errata for Writing Add-ins for Visual Studio .NET.<o:p></o:p></span></font></p>
+
+<p class=MsoNormal><font size=3 face="Times New Roman"><span style='font-size:
+12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></font></p>
+
+<p class=MsoNormal><font size=3 face="Times New Roman"><span style='font-size:
+12.0pt'>1. The definition for the OnConnection Method on page 28 should read:<o:p></o:p></span></font></p>
+
+<p class=MsoNormal><font size=3 face="Times New Roman"><span style='font-size:
+12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></font></p>
+
+<p class=MsoNormal><font size=3 face="Times New Roman"><span style='font-size:
+12.0pt'><span style="mso-spacerun: yes">   </span>Public Sub OnConnection(ByVal
+application As Object, _<o:p></o:p></span></font></p>
+
+<p class=MsoNormal><font size=3 face="Times New Roman"><span style='font-size:
+12.0pt'><span style="mso-spacerun: yes">      </span>ByVal connectMode As
+Extensibility.ext_ConnectMode, _<o:p></o:p></span></font></p>
+
+<p class=MsoNormal><font size=3 face="Times New Roman"><span style='font-size:
+12.0pt'><span style="mso-spacerun: yes">      </span>ByVal addInInst As Object,
+ByRef custom As System.Array) _<o:p></o:p></span></font></p>
+
+<p class=MsoNormal><font size=3 face="Times New Roman"><span style='font-size:
+12.0pt'><span style="mso-spacerun: yes">      </span>Implements
+Extensibility.IDTExtensibility2.OnConnection<o:p></o:p></span></font></p>
+
+<p class=MsoNormal><font size=3 face="Times New Roman"><span style='font-size:
+12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></font></p>
+
+<p class=MsoNormal><font size=3 face="Times New Roman"><span style='font-size:
+12.0pt'>2. On page 23, the value for LoadBehavior should be 1 and not 0.<o:p></o:p></span></font></p>
+
+<p class=MsoNormal><font size=3 face="Times New Roman"><span style='font-size:
+12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></font></p>
+
+<p class=MsoNormal><font size=3 face="Times New Roman"><span style='font-size:
+12.0pt'>3. On page 35, the registry key for listing an add-in with the Add-in
+manager is given.<span style="mso-spacerun: yes">  </span>This registry setting
+is for Visual Studio 2001.<span style="mso-spacerun: yes">  </span>For Visual
+Studio 2003, the registry key should be changed in one character.<span
+style="mso-spacerun: yes">  </span>The &quot;7.0&quot; must be changed to
+&quot;7.1&quot; in order for the Add-in manager in VS 2003 to find the values
+to connect the add-in.<span style="mso-spacerun: yes">  </span>An add-in
+compiled (DLL) under VS 2001 will work without recompiling if the
+aforementioned registry adjustment is made.<o:p></o:p></span></font></p>
+
+<p class=MsoNormal><font size=3 face="Times New Roman"><span style='font-size:
+12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></font></p>
+
+<p class=MsoNormal><font size=3 face="Times New Roman"><span style='font-size:
+12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></font></p>
+
+<p class=MsoNormal><font size=3 face="Times New Roman"><span style='font-size:
+12.0pt'>4. Chapter 6, Page 165, Line 11 should read ' s =
+&quot;btnTestButton&quot;', instead of ' s = &quot;txtTestButton&quot;'</span></font></p>
+
+</div>
+
+</body>
+
+</html>
